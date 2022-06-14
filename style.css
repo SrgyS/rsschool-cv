@@ -26,18 +26,17 @@ body {
     max-width: 1440px;
     margin: 0px auto;
     padding: 0px 20px;
-
 }
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
 .header {
     border: 1px solid red;
     background-color: rgb(31, 126, 156);
 
 }
 .main {
-    border: 1px solid red;
-
-}
-.footer {
     border: 1px solid red;
 }
 .nav-list {
@@ -49,10 +48,11 @@ body {
 }
 a {
     text-decoration: none;
+    color: black;
 }
 .nav-link {
     padding: 0 20px;
-    line-height: 50px;
+    line-height: 55px;
     transition: .3s;
     color: aliceblue;
 }
@@ -64,3 +64,43 @@ a:hover {
     height: 200px;
     border-radius: 50%;
     box-shadow: rgba(65, 133, 136, 0.6) 0px 4px 8px;
+}
+h1, h2, h3 {
+    text-transform: uppercase;
+}
+.section-title {
+
+}
+.section {
+    width: calc(50% - 20px);
+    padding: 10px;
+    border-bottom: 2px solid rgb(12, 6, 88);
+    margin-inline-end: auto;
+}
+.section-profile {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    border-bottom: 15px solid rgb(150, 186, 184);
+    padding: 40px;
+}
+.contact-list {
+    list-style: none;
+}
+.footer {
+    background-color: rgb(31, 126, 156);
+    display: flex;
+    color: aliceblue;
+    padding: 10px;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: auto;
+}
+.section-languages {
+    border-bottom: 0;
+}
