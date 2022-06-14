@@ -1,74 +1,88 @@
 @font-face {
     font-family: 'raleway';
     src: url("./assets/fonts/Raleway-Medium.ttf");
-    font-weight: 300;
+    font-weight: 500;
 }
+
+@font-face {
+    font-family: 'raleway';
+    src: url("./assets/fonts/Raleway-Regular.ttf");
+    font-weight: 400;
+} 
+
 * {
     box-sizing: border-box;
-  }
- 
+}
+
 html {
     scroll-behavior: smooth; 
-  } 
+} 
+
 body {
-    border: 1px solid red;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     font-family: 'raleway';
+    font-weight: 400;
     padding: 0;
     margin: 0;
     color: black;
-
+    line-height: 1.5;
+    min-height: 100vh;
 }
+
 .container {
-    border: 1px solid blue;
     max-width: 1440px;
     margin: 0px auto;
     padding: 0px 20px;
 }
+
 .main-container {
     display: flex;
     flex-wrap: wrap;
-  }
+}
+
 .header {
-    border: 1px solid red;
     background-color: rgb(31, 126, 156);
 
 }
 .main {
-    border: 1px solid red;
+    margin-bottom: auto;
 }
 .nav-list {
     display: flex;
     justify-content: flex-end;
     list-style: none;
     align-items: center;
-    
 }
+
 a {
     text-decoration: none;
     color: black;
 }
+
 .nav-link {
     padding: 0 20px;
-    line-height: 55px;
+    line-height: 50px;
     transition: .3s;
     color: aliceblue;
 }
 a:hover {
     color: aquamarine;
 }
+
 .photo {
     width: 200px;
     height: 200px;
     border-radius: 50%;
     box-shadow: rgba(65, 133, 136, 0.6) 0px 4px 8px;
 }
-h1, h2, h3 {
+
+.section-title {    
+    color: rgb(27, 72, 91);
+    letter-spacing: 5px;
+    font-size: 18px;
     text-transform: uppercase;
-}
-.section-title {
 
 }
 .section {
@@ -86,15 +100,17 @@ h1, h2, h3 {
     border-bottom: 15px solid rgb(150, 186, 184);
     padding: 40px;
 }
-.contact-list {
-    list-style: none;
+.contact-list :hover {
+    color: rgb(31, 126, 156);
 }
+    
 .footer {
     background-color: rgb(31, 126, 156);
     display: flex;
     color: aliceblue;
     padding: 10px;
 }
+
 .footer-container {
     display: flex;
     justify-content: space-between;
@@ -104,3 +120,23 @@ h1, h2, h3 {
 .section-languages {
     border-bottom: 0;
 }
+
+.name {
+    font-family: 'raleway';
+    font-weight: 500;
+    letter-spacing: 10px;
+    font-size: 25px;
+}
+
+.section-subtitle {
+    font-size: 16px;
+    font-family: 'raleway';
+    font-weight: 300;
+}
+
+@media (max-width: 768px) {
+    .section {
+        width: 100%;
+    }
+}
+    
