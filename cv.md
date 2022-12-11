@@ -25,3 +25,18 @@ function highAndLow(numbers){
   	return `${Math.max(...numbers)} ${Math.min(...numbers)}`;
 }
 ```
+
+# Experience:
+
+1. cell phone repairman
+2. car salesman
+
+# Education:
+
+The Bonch-Bruevich St. Petersburg State University of Telecommunications
+
+- Multichannel telecommunication systems
+
+# Languages:
+
+English pre-intermediate
