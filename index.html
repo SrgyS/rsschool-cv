@@ -1,23 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
     <title>CV</title>
-</head>
+  </head>
 
-<body>
-    <header class="header">
-
-    </header>
+  <body>
+    <header class="header"></header>
     <div class="main">
+        <div class="container">
+            <div class="left-side">
+              <div class="photo"><img src="./assets/cvimg1.jpg" alt="photo"></div>
+                <section class="contacts">
+                    <h2>Contacts</h2>
+                    <ul>
+                        <li>Location: St.Petersburg, Russia</li>
+                        <li>Phone: +7 911 254 51 46</li>
+                        <li>Email: srstepanov@gmail.com</li>
+                        <li>GitHub: [SrgyS](https://github.com/SrgyS)</li>
+                    </ul>
+                </section>
+                <section class="skills">
+                    <h2>Skills</h2>
+                <ul>
+                    <li>html, css video courses on Youtube channel Glo Academy</li>
+                    <li>RS School FE stage0</li>
+                </ul></section>
+                <section class="languages">
+                    <h2>Languages</h2>
+                    <p>English pre-intermediate</p>
+                </section>
+            </div>
+          </div>
+            <div class="right-side">
+                <section class="About-me">
+                    <h1>Sergei Stepanov</h1>
+                    <h3>Junior front-end developer</h3>
+                    <h2>About me</h2>
+                    <p>I've experienced in various fields. After graduation, I worked as a cell phone repairman for almost six years. After that I decided to change my line of work and went into sales. I worked as a car salesman for over 10 years. Now I decided to change the field of activity again. My goal is to become a front-end developer. Technical background and education help me in learning new knowledge and skills. I enjoy solving problems. Soft skills and sense of humor are also my strong points.</p>
+                </section>
+                <section class="experience">
+                    <h2>Experience</h2>
+                    <ul>
+                        <li>cell phone repairman</li>
+                        <li>car salesman</li>
+                    </ul>
+                </section>
+                <section class="education">
+                    <h2>Education</h2>
+                    <p>The Bonch-Bruevich St. Petersburg State University of Telecommunications
 
+                        - Multichannel telecommunication systems</p>
+                </section>
+                <section class="code-example">
+                    <h2>Code example</h2>
+                    <code>
+                        function highAndLow(numbers){
+                            numbers = numbers.split('');
+                            return `${Math.max(...numbers)} ${Math.min(...numbers)}`;
+                      }
+                    </code>
+                </section>
+            </div>
+        </div>
     </div>
-    <div class="footer">
-
-    </div>
-</body>
-
+    <div class="footer"></div>
+  </body>
 </html>
