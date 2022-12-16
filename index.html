@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel="stylesheet" href="style.css" >
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" >
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    >
+    <title>CV</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <nav>
+          <ul class="navigation">
+            <li class="navigation__item">
+              <a class="nav__link" href="#contacts">Contacts</a>
+            </li>
+            <li class="navigation__item">
+              <a class="nav__link" href="#about">About me</a>
+            </li>
+            <li class="navigation__item">
+              <a class="nav__link" href="#education">Education</a>
+            </li>
+            <li class="navigation__item">
+              <a class="nav__link" href="#code">Code example</a>
+            </li>
+            <li class="navigation__item">
+              <a class="nav__link" href="#experience">Experience</a>
+            </li>
+            <li class="navigation__item">
+              <a class="nav__link" href="#skills">Skills</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="main">
+      <div class="container">
+        <div class="left-side">
+          <div><img class="photo" src="./assets/cvimg1.jpg" alt="photo" ></div>
+          <section class="contacts" id="contacts">
+            <h2>Contacts</h2>
+            <ul>
+              <li class="contacts__item">
+                <img
+                  class="icon"
+                  src="./assets/icons8-location.png"
+                  alt="location icon"
+                ><a
+                  class="contacts__item"
+                  href="https://www.google.com/maps/place/%D0%93%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9+%D0%AD%D1%80%D0%BC%D0%B8%D1%82%D0%B0%D0%B6/@59.940414,30.0946716,9z/data=!4m13!1m7!3m6!1s0x4696378cc74a65ed:0x6dc7673fab848eff!2z0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LM!3b1!8m2!3d59.9310584!4d30.3609096!3m4!1s0x4696310b32cbe2e9:0x74e032aa0505dfc!8m2!3d59.9398317!4d30.3145597"
+                  >Location: St.Petersburg, Russia</a
+                >
+              </li>
+              <li class="contacts__item">
+                <img
+                  class="icon"
+                  src="./assets/icons8-phone.png"
+                  alt="phone icon"
+                >
+                <a class="contacts__item" href="tel:+79112545146"
+                  >Phone: +7 911 254 51 46</a
+                >
+              </li>
+              <li class="contacts__item">
+                <img
+                  class="icon"
+                  src="./assets/icons8-message.png"
+                  alt="email icon"
+                ><a class="contacts__item" href="mailto:srstepanov@gmail.com"
+                  >Email: srstepanov@gmail.com</a
+                >
+              </li>
+              <li class="contacts__item">
+                <img
+                  class="icon"
+                  src="./assets/icons8-github-60.png"
+                  alt=""
+                ><a class="contacts__item" href="http://github.com/SrgyS"
+                  >GitHub: [SrgyS](https://github.com/SrgyS)</a
+                >
+              </li>
+            </ul>
+          </section>
+          <section class="skills" id="skills">
+            <h2>Skills</h2>
+            <ul>
+              <li>- html, css video courses on Youtube channel Glo Academy</li>
+              <li>- RS School FE stage0</li>
+            </ul>
+          </section>
+          <section class="languages" id="languages">
+            <h2>Languages</h2>
+            <p>English pre-intermediate</p>
+          </section>
+        </div>
+        <div class="right-side">
+          <h1>Sergei Stepanov</h1>
+          <h3>Junior front-end developer</h3>
+          <section class="about-me right-section" id="about">
+            <h2>About me</h2>
+            <p>
+              I've experienced in various fields. After graduation, I worked as
+              a cell phone repairman for almost six years. After that I decided
+              to change my line of work and went into sales. I worked as a car
+              salesman for over 10 years. Now I decided to change the field of
+              activity again. My goal is to become a front-end developer.
+              Technical background and education help me in learning new
+              knowledge and skills. I enjoy solving problems. Soft skills and
+              sense of humor are also my strong points.
+            </p>
+          </section>
+          <section class="experience right-section" id="experience">
+            <h2>Experience</h2>
+            <ul>
+              <li>- cell phone repairman</li>
+              <li>- car salesman</li>
+            </ul>
+          </section>
+          <section class="education right-section" id="education">
+            <h2>Education</h2>
+            <p>
+              The Bonch-Bruevich St. Petersburg State University of
+              Telecommunications<br >
+
+              - Multichannel telecommunication systems
+            </p>
+          </section>
+          <section class="code-example right-section" id="code">
+            <h2>Code example</h2>
+            <code>
+              function highAndLow(numbers){ numbers = numbers.split('');<br >
+              return `${Math.max(...numbers)} ${Math.min(...numbers)}`; }
+            </code>
+          </section>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container footer-container">
+        <span>2022 &copy; </span>
+        <a href="https://rs.school/"
+          ><img
+            class="footer__logo"
+            width="100"
+            src="./assets/footer-rss-logo.png"
+            alt="RSS logo"
+        ></a>
+        <a href=""
+          ><img
+            class="footer__logo"
+            width="50"
+            src="./assets/icons8-github-60.png"
+            alt=""
+        ></a>
+      </div>
+    </footer>
+  </body>
+</html>
